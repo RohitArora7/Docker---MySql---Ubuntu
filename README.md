@@ -15,7 +15,7 @@ mysqldump -pqbbGos0S --all-databases > sql.sql
 docker cp tutor_local_mysql_1:sql.sql . 
 ```
 
-Combine 1 2 3 
+--Docker One Line Command
 ```bash
 docker exec tutor_local_mysql_1 /usr/bin/mysqldump -u root --password=qbbGos0S --all-databases > backup.sql
 ```
