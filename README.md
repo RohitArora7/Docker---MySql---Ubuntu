@@ -1,6 +1,6 @@
 # Docker---MySql---Ubuntu
 
----------------Backup-------------------**
+**---------------Backup-------------------**
 
 1. Enter Docker sql container in bash mode
 ```bash
@@ -19,7 +19,7 @@ docker cp tutor_local_mysql_1:sql.sql .
 ```bash
 docker exec tutor_local_mysql_1 /usr/bin/mysqldump -u root --password=qbbGos0S --all-databases > backup.sql
 ```
---------------Restore-------------------
+**--------------Restore-------------------**
 ```bash
 cat backup.sql | docker exec -i tutor_local_mysql_1 /usr/bin/mysql -u root --password=qbbGos0S --all-databases
 ```
